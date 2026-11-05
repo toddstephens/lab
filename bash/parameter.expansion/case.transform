@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Description: Transform a variable using uppercase and lowercase transformation.
+
+name="hello world"
+echo "Transform the variable, $name, using parameter expansion in bash."
+echo "Transform $name to begin with uppercase."
+echo "${name^}"
+# Hello world (capitalize first)
+
+echo "Transform $name to all uppercase."
+echo "${name^^}"
+# HELLO WORLD (capitalize all)
+
+name="HELLO BASH"
+echo "Transform $name to all lowercase."
+echo "${name,,}"
+# hello bash (lowercase all)

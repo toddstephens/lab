@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Description: This one liner reads the PATH variable and replaces the colons with newlines.
+
+echo "${PATH//:/$'\n'}"
+
+# Note: The second '$' is not expanding a variable named '\n',
+# It is a syntactic marker telling bash to use C-style escape
+# rules inside these single quotes.

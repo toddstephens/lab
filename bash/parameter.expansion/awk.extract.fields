@@ -1,2 +1,6 @@
 #!/bin/bash
+
+# Description: Use awk to display the second parameter in a list.
+
+echo "Print the second item in this list: one two three"
 echo "one two three" | awk '{print $2}'

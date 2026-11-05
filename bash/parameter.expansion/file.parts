@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Description: Breaks down a file path into separate parts.
+
+filepath="/home/user/report.tar.gz"
+
+filename="${filepath##*/}"
+# report.tar.gz (basename)
+
+directory="${filepath%/*}"
+# /home/user (dirname)
+
+extension="${filename##*.}"
+# gz
+
+basename="${filename%%.*}"
+# report
+
+echo "The filepath is $filepath"
+echo "The directory is $directory"
+echo "The filename is $filename"
+echo "The last extension is $extension"
+echo "The basename is $basename"
+
