@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Extract the second column in a delimited row.
+
+echo "a:b:c" | cut -d: -f2

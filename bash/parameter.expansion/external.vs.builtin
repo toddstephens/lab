@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# External command (spawns new process)
+
+filename=$(echo "document.txt" | sed s'/.txt//')
+echo "$filename using sed"
+
+# Parameter expansion (built-in, faster)
+
+filename="document.txt"
+echo "${filename%.txt} using built-in"

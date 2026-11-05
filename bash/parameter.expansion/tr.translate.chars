@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "hello" | tr 'a-z' 'A-Z'
+
+# The commands above will not work for accented letters.
+# Use the commands below for that
+
+echo "hello" | tr '[:lower:]' '[:upper:]'
+
