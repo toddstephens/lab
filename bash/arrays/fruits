@@ -1,0 +1,22 @@
+#!/bin/bash
+
+fruits=("apple" "banana" "orange")
+
+# Single element (zero-indexed)
+echo "${fruits[0]}"
+# apple
+
+# All elements
+echo "${fruits[@]}"
+# apple banana orange
+
+# Length
+echo "${#fruits[@]}"
+# 3
+
+# Add element
+fruits+=("grape")
+
+for fruit in "${fruits[@]}"; do
+    echo "I like $fruit"
+done
